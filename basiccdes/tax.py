@@ -13,6 +13,7 @@ print('Employee name= ', name)
 print('Monthly gross salary= ', monthly_gross_salary)
 print('Annual gross salary= ', annual_gross_salary)
 
-print('%-6s %-15s %-20s %-20s' % ('Emp ID', 'Name', 'Monthly Gross Salary', 'Annual Gross Salary'))
-print('-' * 80)
-print('%-6d %-15s %-20.2f %-20.2f' % (emp_id, name, monthly_gross_salary, annual_gross_salary))
+standard_deduction = 50000 
+
+taxable_income = annual_gross_salary - standard_deduction
+print(f"Taxable Income: ₹{taxable_income:,.2f}")  
